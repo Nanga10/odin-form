@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open San", sans-serif;
+  height: 100vh;
+  display: grid; /*The body is the grid*/
+  grid-template-areas: "aside main";
+  grid-template-columns: 2fr 2fr;
+}
+
+/*setting  grid area*/
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+aside {
+  background-image: url("Image/fabio-comparelli-uq2E2V4LhCY-unsplash.jpg");
+  background-size: 100%;
+}
+
+.form-header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.content {
+  margin: 0 0 0 30px;
+}
+
+.names {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contact-details {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.passwords {
+  display: flex;
+}
+
+button {
+  margin: 50px 0 50px 0;
+  padding: 20px;
+  border-radius: 10%;
+  border: 2px solid steelblue;
+  background: #ffff;
+}
+
+button:hover {
+  border: none;
+  background: steelblue;
+  color: #fff;
+}
+.right-input-fields {
+  margin-left: 150px;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 120%;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid steelblue;
+  width: 120%;
+}
+
+.login {
+  display: flex;
+}
+
+.login a {
+  padding-left: 10px;
+  color: steelblue;
+}
+
+img {
+  display: block;
+  margin: 30px 0 0 30px;
+  height: 100px;
+}
